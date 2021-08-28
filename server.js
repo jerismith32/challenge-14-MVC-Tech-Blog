@@ -41,5 +41,5 @@ app.use(require('./controllers/'));
 
 //To sync the models to the database
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log(`Now listening ${PORT}`));
 });
