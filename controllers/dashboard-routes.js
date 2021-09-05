@@ -1,11 +1,15 @@
 const router = require('express').Router();
+//Connects to the Connects.js file in Config Folder
 const sequelize = require('../config/connection');
+//PUlls in Post, User, and Comment Models
 const { Post, User, Comment } = require('../models');
+//Authentication
 const withAuth = require('../utils/auth');
 
+//This will get all posts for the dashboards with Authentication
 router.get('/', withAuth, (req, res) => {
-    console.log(req.session);
-    console.log('======================');
+    // console.log(req.session);
+    // console.log('======================');
     Post.findAll({
       where: {
         user_id: req.session.user_id
