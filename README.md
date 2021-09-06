@@ -92,7 +92,7 @@
 
 
   ## Link
-  [Help On Error Message](https://stackoverflow.com/questions/36558909/route-get-requires-callback-functions-but-got-a-object-undefined)
+  [Challenge 14 MVC Tech Blog Deployed Link](https://challenge-14-mvc-tech-blog.herokuapp.com/)
 
   ## Screenshot
   ![Screenshot](./public/images/screenshot.png)
